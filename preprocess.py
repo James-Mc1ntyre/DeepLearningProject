@@ -23,7 +23,7 @@ srate = 250
 
 filepath = os.getcwd()
 
-datafile = scipy.io.loadmat(filepath + '//OnlineDataset_FromJohn//rawdata.mat')
+datafile = scipy.io.loadmat(filepath + '//Data_For_James//rawdata.mat')
 data = datafile['X_raw']
 
 # Format for MNE
