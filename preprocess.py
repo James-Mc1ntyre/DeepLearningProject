@@ -21,9 +21,9 @@ from sklearn.model_selection import train_test_split
 # Data is filtered
 srate = 250
 
-filepath = r'C:\Users\james\OneDrive\GradSchool\Spring 2022'
+filepath = os.getcwd()
 
-datafile = scipy.io.loadmat(filepath + '//Data_for_James//rawdata.mat')
+datafile = scipy.io.loadmat(filepath + '//OnlineDataset_FromJohn//rawdata.mat')
 data = datafile['X_raw']
 
 # Format for MNE
@@ -50,20 +50,11 @@ epochs.crop(0,4)
 pair = ['C3', 'C4']
 
 
-# epochs_CHsets_Right = []
-# epochs_CHsets_Left = []
-# epochs_CHsets_Feet = []
-# epochs_CHsets_Tongue = []
-# for pair in pairs:
 epochs_CHsets_Right = epochs.copy().pick(pair)['Left'].get_data()[:,:,:-1]
 epochs_CHsets_Left = epochs.copy().pick(pair)['Right'].get_data()[:,:,:-1]
 epochs_CHsets_Feet = epochs.copy().pick(pair)['Feet'].get_data()[:,:,:-1]
 epochs_CHsets_Tongue = epochs.copy().pick(pair)['Tongue'].get_data()[:,:,:-1]
 
-# epochs_Right = np.concatenate(epochs_CHsets_Right, axis=0)
-# epochs_Left = np.concatenate(epochs_CHsets_Left, axis=0)
-# epochs_Feet = np.concatenate(epochs_CHsets_Feet, axis=0)
-# epochs_Tongue = np.concatenate(epochs_CHsets_Tongue, axis=0)
 
 all_epochs = np.concatenate([epochs_CHsets_Right, epochs_CHsets_Left, epochs_CHsets_Feet, epochs_CHsets_Tongue], axis=0)
 all_labels = ['Right']*len(epochs_CHsets_Right) + ['Left']*len(epochs_CHsets_Left) + ['Rest']*len(epochs_CHsets_Feet) + ['Tongue']*len(epochs_CHsets_Tongue)
