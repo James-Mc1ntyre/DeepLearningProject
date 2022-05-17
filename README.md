@@ -1,19 +1,34 @@
 <h1 align="center" > Deep Learning Project </h1>
 
-Using multiple strategies to train a state of the art machine learning architecture to classify 4 differrent Motor Imagery classes.
+<h2 align="center" > What is this? </h2>
+<div> Using multiple strategies to train a state of the art machine learning architecture to classify 4 differrent Motor Imagery classes. We use the architecture from Mattoli et al. on a new online dataset (2a) from Tangermann et al. </div> This project was done with a colleague of mine, John Mclinden. He is skilled in Matlab processing so he pre-processed the online dataset. The pre-processed dataset can be found in the Data_For_James folder. I then do some extra pre-processing in preprocessing.py. </div> 
 
-<h3 align="center" > Reference paper </h3>
+<h3 align="center" > Reference papers </h3>
+<h4 align="center" > Architecture </h4>
  <div> Mattioli F, Porcaro C, Baldassarre G. <a href="https://iopscience.iop.org/article/10.1088/1741-2552/ac4430">A 1D CNN for high accuracy classification and 
 transfer learning in motor imagery EEG-based brain-computer interface </a>. J Neural Eng. 2022 
 Jan 6;
 18(6). doi: 10.1088/1741-2552/ac4430. PMID: 34920443. </div> 
 
 <div align="center">
-<img src="Architecture_Images/hopefullnet.png" alt="HopefullNet">
+<img src="Architecture_Images/hopefullnet .png" alt="HopefullNet">
 </div>
 
+<h4 align="center" > Dataset </h4>
+<div> Michael Tangermann, Klaus-Robert Müller, Ad Aertsen, Niels Birbaumer, Christoph Braun6, Clemens Brunner, Robert Leeb, Carsten Mehring, Kai J. Miller, Gernot R. Müller-Putz, Guido Nolte, Gert Pfurtscheller, Hubert Preissl, Gerwin Schalk, Alois Schlögl, Carmen Vidaurre, Stephan Waldert and Benjamin Blankertz <a href="https://www.frontiersin.org/articles/10.3389/fnins.2012.00055/full">Review of the BCI competition IV </a>. Front. Neurosci., 13 July 2012;
+18(6). doi: 10.3389/fnins.2012.00055. </div> 
+
+<h2 align="center" > Methods </h2>
+
+<h3 align="center" > Pre-train network </h3>
+Following the steps outlined in https://github.com/Kubasinska/MI-EEG-1D-CNN, we train the Convolutional Neural Network with ROI-b (Central electrodes). We train with this ROI as this is where the features for Motor Imagery most strongly appear on the scalp. We also use this ROI for testing with the online dataset. The weights for this trained classifier are saved in 
+
+<h3 align="center" > Pre-process data </h3>
+
+The data was already pre-processed by John (filtering and epochs created), however, some preprocessing was also done in preprocessing.py. This includes Common Averave Referencing, trimming the epochs to 4 seconds, and organizing the data into an ideal format
+
+<h3 align="center" > Jupyter notebook experiments </h3>
+The
+
 <h2 align="center" > Usage </h2>
-
-<h3 align="center" > Install the dependencies </h3>
-
-In order to train the network (and perform inference) you need to install the dependencies. There are two ways to install dependencies: (1) **Using a docker container** (recommended), (2) **Using a python environment**. An NVIDIA GPU with at least 6 GB is also recommended. The network was trained with an NVIDIA RTX 2060 and an NVIDIA TESLA P100, the former taking about 30 minutes to train, the latter about 15 minutes.
+The 
