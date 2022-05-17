@@ -9,7 +9,7 @@ Jan 6;
 18(6). doi: 10.1088/1741-2552/ac4430. PMID: 34920443. </div> 
 
 <div align="center">
-<img src="docs/hopefullnet.png" alt="HopefullNet">
+<img src="Architecture_Images/hopefullnet.png" alt="HopefullNet">
 </div>
 
 <h2 align="center" > Usage </h2>
