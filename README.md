@@ -1,7 +1,7 @@
 <h1 align="center" > Deep Learning Project </h1>
 
 <h2 align="center" > What is this? </h2>
-<div> Using multiple strategies to train a state of the art machine learning architecture to classify 4 differrent Motor Imagery classes. We use the architecture from Mattoli et al. on a new online dataset (2a) from Tangermann et al. </div> This project was done with a colleague of mine, John Mclinden. He is skilled in Matlab processing so he pre-processed the online dataset. The pre-processed dataset can be found in the Data_For_James folder. I then do some extra pre-processing in preprocessing.py. <div> Here is a link to the project write-up: https://drive.google.com/file/d/1hT70JJ8F9pfgUzSku3Opl6HZnzhzmmhE/view?usp=sharing </div> 
+<div> A deep learning class project. We experiment using multiple strategies to train a state of the art machine learning architecture to classify 4 differrent Motor Imagery classes. We use the architecture from Mattoli et al. on a new online dataset (2a) from Tangermann et al. </div> This project was done with a colleague of mine, John Mclinden. He is skilled in Matlab processing so he pre-processed the online dataset. The pre-processed dataset can be found in the Data_For_James folder. I then do some extra pre-processing in preprocessing.py. <div> Here is a link to the project write-up: https://drive.google.com/file/d/1hT70JJ8F9pfgUzSku3Opl6HZnzhzmmhE/view?usp=sharing </div> 
 
 <h3 align="center" > Reference papers </h3>
 <h4 align="center" > Architecture </h4>
