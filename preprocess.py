@@ -67,4 +67,4 @@ training_epochs, testing_epochs, training_labels, testing_labels = train_test_sp
                                                                                     random_state=42)
 
 # save processed epochs and labels
-np.savez(filepath + '\\RecordedProjectData\\preprocessedOnlineDataset_EpochsAndLabels.npz', training_epochs=training_epochs, training_labels=training_labels, testing_epochs=testing_epochs, testing_labels=testing_labels)
+np.savez(filepath + '\\Data_For_James\\preprocessedOnlineDataset_EpochsAndLabels.npz', training_epochs=training_epochs, training_labels=training_labels, testing_epochs=testing_epochs, testing_labels=testing_labels)
