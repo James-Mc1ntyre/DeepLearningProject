@@ -43,5 +43,11 @@ This method was unsuccessful, we hypothesize this is becasue the features being 
 
 <h4 align="center" > Transfer learning </h4>
 Transfer learning piqued our interest. We load a pre-trained model that has been trained using the steps from Mattoli et al. for ROI_b. We freeze the convolutional layers, so that hopefully the features being extracted are the same as Mattoli et al. which are discriminative for Motor Imagery classes, as their accuracy was quite impressive. Once the convolutional layers are frozen, we fine-tune the model on new data (from the BCI competition).
-The results for these experiments are underwhelming. We hypothesize that our classification is not performing well because EEG Motor Imagery data is inherently difficult to classify. See the discussion section in the write up for further discussion. Link: https://drive.google.com/file/d/1hT70JJ8F9pfgUzSku3Opl6HZnzhzmmhE/view?usp=sharing
 
+
+<h4 align="center" > Best performance </h4>
+The best performance came from initializing and training the architecture from Mattoli et al. We acheve a Cohen Kappa Coeficcient of 0.626 (72% accuracy for 4 class) This is a better performance than any team achieved in the 2008 BCI competition. However, most teams used classic feature extraction and linear classification methods rather than deep learning. This goes to show how uesful deep learning can be. Below is a confusion matrix of the final results:
+
+<div align="center">
+<img src="Architecture_Images/confusion_matrix.jpg" alt="Confusion matrix of final results">
+</div>
