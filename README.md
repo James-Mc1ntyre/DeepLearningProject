@@ -1,4 +1,4 @@
-<h1 align="center" > Deep Learning Project </h1>
+<h1 align="center" > Deep Learning for Motor Imagery Classification using Electroencephalography </h1>
 
 <h2 align="center" > What is this? </h2>
 <div> A deep learning class project. We experiment deep learning methods using a state of the art convolutional neural network (CNN) architecture to classify 4 differrent motor imagery classes in a dataset found online. We use the architecture from Mattoli et al. on a new dataset (2a) from Tangermann et al. </div> This project was done with a colleague of mine, John Mclinden. He is skilled in Matlab processing so he pre-processed the online dataset. The pre-processed dataset can be found in the Data_For_James folder. I then do some extra pre-processing in preprocessing.py. The main notebook includes the deep learning experiments, which are explained more in the Methods section.
