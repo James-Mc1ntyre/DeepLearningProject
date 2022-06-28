@@ -26,10 +26,10 @@ Following the steps outlined in https://github.com/Kubasinska/MI-EEG-1D-CNN, we 
 <h3 align="center" > Jupyter notebook experiments </h3>
 
 <h4 align="center" > Training the CNN architecture </h4>
-Here we train the architecture introduced by Mattoli et al. on the BCI competition dataset. THe only modicifations made to the arhitecture here is chnging the output layer to only 4 values rather than 5, because this dataset only has 4 classes rather than 5.
+Here we train the architecture introduced by Mattoli et al. on the BCI competition dataset. The only modifications made to the architecture here is chnging the output layer to only 4 values rather than 5, because this dataset only has 4 classes rather than 5.
 
 <h4 align="center" > Feature learning with an autoencoder </h4>
-We wanted to look into end to end learning, so we decided to use an autoencoder to train an encoder with a latent space of 296 values. This autoencoder is eesentially the Hopefulnet architecture but clipped at the end (jsut after the latent space layer) and a reversed version of the network. In order to reverse the network, some layers needed to be changed. The convolutional layers are changed into a transpose convolutional layers, the flatten layers are changed into reshaping layers and the Batch normalization layers needed to be changed into the tensorflow_probability.bijector version. After we train the autoencoder, we extract teh encoder network and freeze it. We append an MLP to the encoder and fine-tune the model with more data.
+We wanted experiment with more feature learning strategies, so we decided to use an autoencoder to train an encoder with a latent space of 296 values. This autoencoder is eesentially the Hopefulnet architecture but clipped at the end (jsut after the latent space layer) and a reversed version of the network. In order to reverse the network, some layers needed to be changed. The convolutional layers are changed into a transpose convolutional layers, the flatten layers are changed into reshaping layers and the Batch normalization layers needed to be changed into the tensorflow_probability.bijector version. After we train the autoencoder, we extract the encoder network and freeze it. We append an MLP to the encoder and fine-tune the model with more data.
 This method was unsuccessful, we hypothesize this is becasue the features being encoded to the latent space may be representative of the data, but they may not be discriminative reguarding motor imagery classes.
 
 <div align="center">
