@@ -43,6 +43,8 @@ This method was unsuccessful, we hypothesize this is becasue the features being 
 <h4 align="center" > Transfer learning </h4>
 Transfer learning piqued our interest. We load a pre-trained model that has been trained using the steps from Mattoli et al. for ROI_b. We freeze the convolutional layers, so that hopefully the features being extracted are the same as Mattoli et al. which are discriminative for motor imagery classes, as their accuracy was quite impressive. Once the convolutional layers are frozen, we fine-tune the model on new data (from the BCI competition). This method did not surpass the performance of randomly initializing and trianing the model from scratch. This could mean that the features being extracted by the convolutional layers differ between datasets.
 
+<h2 align="center" > Results </h2>
+
 <h4 align="center" > Best performance </h4>
 The best performance for classifying the BCI competition dataset came from randomly initializing and training the architecture from Mattoli et al. We acheve a Cohen Kappa Coeficcient of 0.72 (80% accuracy for 4 classes). This is a better performance than any team achieved in the 2008 BCI competition. The best team in 2008 achieved a Cohen Kappa Coefficient of 0.57. However, most teams used classic feature extraction and linear classification methods rather than deep learning, because the field was not as developed as is it now. This goes to show how uesful deep learning can be. Below is a confusion matrix of the best results (Training the CNN architecture from scratch):
 
