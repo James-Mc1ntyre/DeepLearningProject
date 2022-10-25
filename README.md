@@ -33,7 +33,7 @@ Jan 6;
 
 <h2 align="center" > Methods </h2>
 
-<h3 align="center" > Pre-train network for transfer learning</h3>
+<h3 align="center" > Pre-train network for transfer learning</h4>
 Following the steps outlined in https://github.com/Kubasinska/MI-EEG-1D-CNN, we train the CNN with ROI-b (Central electrodes). We train with this ROI as this is where the features for motor imagery most strongly appear on the scalp. The weights for this trained classifier are saved in the models/roi_b folder.
 
 <h3 align="center" > Jupyter notebook experiments </h3>
