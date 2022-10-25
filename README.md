@@ -1,7 +1,20 @@
 <h1 align="center" > Machine Learning and Deep Learning for Motor Imagery Classification using Electroencephalography </h1>
 
 <h2 align="center" > What is this? </h2>
-<div> A project showcasing the power of deep learning, as well as showing some signal processing, machine learning and deep learning skills. We use data from the BCI competition IV dataset 2a (Tangermann et al.) which contains data from 9 participants for a four class motor imagery paradigm (right hand, left hand, feet, tongue). First, I extract features from the Electroencephalography (EEG) data to use in a basic Support Vector Machine (SVM) classification and to be used in a features based multi-layer perceptron (MLP). This feature extraction to classification pipeline has been an industry standard in motor imagery analysis. I am very interested in end to end learning and extracting features using neural networks, which is what I explore in these experiments. Using minimally-preprocessed data and an architecture from (Mattoli et al.) we achieve a much better performance (~80% accuracy) than we did with our manual feature extraction method (~30% accuracy). We even outperform all of the contestants from the BCI competition that the data is from. We achieve a Cohen Kappa Coefficient of 0.72 where the winners of the competition achieved a 0.57. The teams did not use deep learning because the field was not as developed as it is now in 2008. This goes to show just how powerful deep learning is.
+<div> A project showcasing the power of deep learning for time series bio-signal classification
+* Data
+    * BCI competition IV dataset 2a (Tangermann et al.) which contains data from 9 participants for a four class motor imagery paradigm (right hand, left hand, feet, tongue)
+        * Motor Imagery is a task where a participant imagines a movement, but does not execute the movement
+* Main Experiments
+    * Feature extraction and a multi-layer perceptron (MLP)
+    * Training a state-of-the-art architecture from scratch
+* Results
+    * We acheve a Cohen Kappa Coeficcient of 0.72 (~80% accuracy for 4 classes)
+        * The best team from the 2008 competition achieved a Cohen Cappa Coeficcient of 0.57
+<br>
+* Extra Experiments
+    * Feature learning with an autoencoder
+    * Transfer learning with a pre-trained architecture
 
 <h3 align="center" > Reference papers </h3>
 <h4 align="center" > Architecture </h4>
