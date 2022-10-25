@@ -1,7 +1,7 @@
 <h1 align="center" > Machine Learning and Deep Learning for Motor Imagery Classification using Electroencephalography </h1>
 
 <h2 align="center" > What is this? </h2>
-<div> A project showcasing the power of deep learning for time series bio-signal classification</div>
+<div> A project showcasing the power of deep learning for time series classification</div>
 
 * **Data**
   * BCI competition IV dataset 2a (Tangermann et al.) which contains data from 9 participants for a four class motor imagery paradigm (right hand, left hand, feet, tongue)
