@@ -2,19 +2,19 @@
 
 <h2 align="center" > What is this? </h2>
 <div> A project showcasing the power of deep learning for time series bio-signal classification
-* Data
-    * BCI competition IV dataset 2a (Tangermann et al.) which contains data from 9 participants for a four class motor imagery paradigm (right hand, left hand, feet, tongue)
-        * Motor Imagery is a task where a participant imagines a movement, but does not execute the movement
-* Main Experiments
-    * Feature extraction and a multi-layer perceptron (MLP)
-    * Training a state-of-the-art architecture from scratch
-* Results
-    * We acheve a Cohen Kappa Coeficcient of 0.72 (~80% accuracy for 4 classes)
-        * The best team from the 2008 competition achieved a Cohen Cappa Coeficcient of 0.57
+- Data
+    - BCI competition IV dataset 2a (Tangermann et al.) which contains data from 9 participants for a four class motor imagery paradigm (right hand, left hand, feet, tongue)
+        - Motor Imagery is a task where a participant imagines a movement, but does not execute the movement
+- Main Experiments
+    - Feature extraction and a multi-layer perceptron (MLP)
+    - Training a state-of-the-art architecture from scratch
+- Results
+    - We acheve a Cohen Kappa Coeficcient of 0.72 (~80% accuracy for 4 classes)
+        - The best team from the 2008 competition achieved a Cohen Cappa Coeficcient of 0.57
 <br>
-* Extra Experiments
-    * Feature learning with an autoencoder
-    * Transfer learning with a pre-trained architecture
+- Extra Experiments
+    - Feature learning with an autoencoder
+    - Transfer learning with a pre-trained architecture
 
 <h3 align="center" > Reference papers </h3>
 <h4 align="center" > Architecture </h4>
