@@ -8,7 +8,7 @@
     * Motor Imagery is a task where a participant imagines a movement, but does not execute the movement
 * **Main Experiments**
   * Feature extraction and a multi-layer perceptron (MLP)
-  * Training a state-of-the-art architecture from scratch
+  * Training a state-of-the-art Convolutional Neural Network (CNN) architecture
 * **Results**
   * We acheve a Cohen Kappa Coeficcient of 0.72 (~80% accuracy for 4 classes)
     * The best team from the 2008 competition achieved a Cohen Cappa Coeficcient of 0.57
